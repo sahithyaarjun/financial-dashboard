@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome | Financials Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: "Poppins", Arial, sans-serif;
+            background: radial-gradient(circle at top left, #1f2937, #020617);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #e5e7eb;
+        }
+
+        /* Navigation Bar */
+        .top-nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .top-nav a {
+            font-size: 13px;
+            text-decoration: none;
+            color: #bfdbfe;
+            padding: 6px 12px;
+            border-radius: 999px;
+            border: 1px solid rgba(148,163,184,0.5);
+            background: rgba(15,23,42,0.85);
+        }
+
+        .top-nav a:hover {
+            background: rgba(59,130,246,0.3);
+        }
+
+        .card {
+            max-width: 520px;
+            width: 90%;
+            background: rgba(15,23,42,0.96);
+            border-radius: 20px;
+            padding: 28px 26px;
+            box-shadow: 0 20px 50px rgba(15,23,42,0.85);
+            border: 1px solid rgba(148,163,184,0.5);
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: 26px;
+        }
+
+        p {
+            margin: 6px 0;
+            font-size: 14px;
+            color: #d1d5db;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-bottom: 6px;
+            font-size: 11px;
+            padding: 3px 9px;
+            border-radius: 999px;
+            background: rgba(59,130,246,0.16);
+            color: #bfdbfe;
+            border: 1px solid rgba(59,130,246,0.5);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            margin-top: 18px;
+            padding: 10px 18px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #3b82f6, #ec4899);
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: 0 14px 30px rgba(59,130,246,0.6);
+        }
+
+        .btn:hover {
+            filter: brightness(1.05);
+            transform: translateY(-1px);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+            box-shadow: 0 10px 20px rgba(59,130,246,0.5);
+        }
+
+        .hint {
+            margin-top: 10px;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="top-nav">
+        <!-- Home = 'home' endpoint, NOT 'index' -->
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        <a href="{{ url_for('compare') }}">Compare</a>
+    </div>
+
+    <div class="card">
+        <span class="tag">Financial Insights</span>
+        <h1>Welcome to the Company Financials Dashboard</h1>
+
+        <p>
+            This tool lets you explore quarterly performance, compare multiple companies,
+            and view percentage differences between them in a visual way.
+        </p>
+        <p>
+            Select your companies, breakdowns, and chart type from the dashboard.
+        </p>
+
+        <!-- Button to open dashboard -->
+        <a href="{{ url_for('dashboard') }}" class="btn">Open Dashboard →</a>
+
+        <div class="hint">
+            Bookmark this link:
+            <code>/dashboard</code>
+        </div>
+    </div>
+
+</body>
+</html>
