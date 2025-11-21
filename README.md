@@ -88,7 +88,7 @@ Example usage in README:
 ![Home Page](screenshots/homepage.png)
 ![Dashboard Line Chart](screenshots/dashboardlinegraph.png)
 ![Dashboard Bar Chart](screenshots/dashboardbargraph.png)
-![Comparison Page](screenshots/comparison.png)
+![Comparison Page](screenshots/comparision.png)
 
 ## Future Enhancements
 
