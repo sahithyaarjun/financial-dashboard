@@ -85,10 +85,10 @@ Add your screenshot files inside the screenshots folder.
 
 Example usage in README:
 
-![Home Page](screenshots/home_page.png)
-![Dashboard Line Chart](screenshots/dashboard_line_chart.png)
-![Dashboard Bar Chart](screenshots/dashboard_bar_chart.png)
-![Comparison Page](screenshots/comparison_page.png)
+![Home Page](screenshots/homepage.png)
+![Dashboard Line Chart](screenshots/dashboardlinegraph.png)
+![Dashboard Bar Chart](screenshots/dashboardbargraph.png)
+![Comparison Page](screenshots/comparison.png)
 
 ## Future Enhancements
 
